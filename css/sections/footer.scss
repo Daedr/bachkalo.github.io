@@ -1,0 +1,53 @@
+$socials: (fb,vk,tw);
+
+.footer {
+  background: $dark-gray;
+  @extend %clearfix;
+}
+
+.container {
+  position: relative;
+}
+
+.footer__left {
+  float: left;
+}
+
+.copyright {
+  height: $footer-height;
+  line-height: $footer-height;
+  @include fira(light);
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
+.footer__right {
+  float: right;
+}
+
+.socials {
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+.socials__item {
+  display: inline-block;
+}
+
+.socials__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: $white;
+  text-indent: -9999px;
+}
+
+@each $social in $socials {
+   .socials__link_#{$social} {
+     background: url('/img/social/#{$social}.png') 0 0 no-repeat;
+
+     &:hover {
+       background: url('/img/social_hover/#{$social}.png') 0 0 no-repeat;
+     }
+   }
+}

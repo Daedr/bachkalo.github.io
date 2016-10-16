@@ -1,0 +1,32 @@
+.sidebar {
+  width: 220px;
+  float: left;
+}
+
+.nav {
+  text-align: right;
+}
+
+.nav__link {
+  display: block;
+  padding: 10px 20px 10px 0;
+  text-align: right;
+  @include fira(regular);
+  font-size: 18px;
+  border-right: 6px solid transparent;
+  color: $dark-gray;
+  transition: 0.2s;
+
+  &:hover {
+    color: $blue;
+    border-right-color: lighten($blue, 25%);
+  }
+}
+
+.nav__item_active {
+  .nav__link {
+    @include fira(bold);
+    color: $blue;
+    border-right-color: $blue;
+  }
+}

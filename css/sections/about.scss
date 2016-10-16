@@ -1,0 +1,79 @@
+.about {
+
+  @extend %clearfix;
+}
+.page-content {
+  width: 700px;
+  float: right;
+}
+
+.about {
+  margin-left: 30px;
+}
+
+.about__left {
+  float: left;
+  width: 280px;
+}
+
+.about__pict {
+  overflow: hidden;
+  border: 5px solid #fff;
+  @include border-radius(50%);
+  width: 220px;
+  height: 220px;
+  background: url("../../img/avatar.png") center center no-repeat;
+  background-size: 100%;
+  transition: 0.3s;
+
+  &:hover {
+    background-size: 110%;
+  }
+}
+
+.about__pict-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about__right {
+  float: right;
+  width: 390px;
+}
+
+.title {
+  font-size: 35px;
+  line-height: 40px;
+  color: $dark-gray;
+  @include fira(medium);
+  margin: 0 0 18px 0;
+}
+
+.about__desc {
+  p {
+    font-size: 18px;
+    @include fira(light);
+    color: #646464;
+  }
+}
+
+.about__btns {
+  text-align: right;
+}
+
+.btn {
+  padding: 10px;
+  @include border-radius(20px);
+  border: 2px solid $light-red;
+  color: $light-red;
+  transition: 0.2s;
+  &:hover {
+    background-color: $light-red;
+    color: #fff;
+  }
+}
+
+.btn__text {
+  font-weight: bold;
+}

@@ -1,0 +1,50 @@
+header {
+  margin-bottom: 30px;
+  height: 79px;
+  line-height: 79px;
+  background-color: rgb(255, 255, 255);
+  @include box-shadow(0px 1px 3px 0px rgba(#000, 0.2));
+  @extend %clearfix;
+}
+
+.header__left,
+.header__right {
+  float: left;
+  width: 50%;
+}
+
+.header__right {
+  text-align: right;
+}
+
+.container {
+  @extend %clearfix;
+}
+
+.user__avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border: 1px solid #bebebe;
+  @include valign(middle);
+  @include border-radius (50%);
+  background: url("../../img/avatar.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.user__name {
+  color: $dark-gray;
+  @include fira(medium);
+  @include valign(middle);
+}
+
+.contacts__list {
+  background: url(../../img/decor/dot.png) 9px 23px repeat-x;
+  color: $blue;
+  @include fira(bold);
+
+  &:hover {
+    color: $light-red;
+    background: url(../../img/decor/dot_hover.png) 9px 23px repeat-x;
+  }
+}
