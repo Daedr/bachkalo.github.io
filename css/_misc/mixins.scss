@@ -1,4 +1,4 @@
-@mixin border-radius($radius) {
+@mixin border-radius($radius...) {
   -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
      -ms-border-radius: $radius;
@@ -16,6 +16,35 @@
   vertical-align: $value;
 }
 
+
+//media query
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+
+@mixin phones {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+//float-clean
 %clearfix {
   &:after, &:before {
     content: "";
@@ -25,4 +54,9 @@
   &:after {
     clear: both;
   }
+}
+
+//responsive
+@function rem($px) {
+	@return $px / $font-size + 0rem;
 }

@@ -1,27 +1,26 @@
 .portfolio {
-  width: 700px;
+  width: rem(700px);
   float: right;
 }
 
 .portfolio__list {
-  margin: 0 0 0 -20px;
+  margin: 0 0 0 rem(-20px);
   font-size: 0;
 }
 
 .portfolio___item {
-  display: inline-block;
-  vertical-align: top;
-  width: 220px;
-  padding: 0 0 20px 20px;
+  @include valign();
+  width: rem(220px);
+  padding: 0 0 rem(20px) rem(20px);
 
   * {
-    font-size: 14px;
+    font-size: rem(14px);
   }
 }
 
 .portfolio__link {
   display: block;
-  border-radius: 10px;
+  @include border-radius(10px);
   background-color: #fff;
 
   &:hover {
@@ -37,24 +36,24 @@
 
 .portfolio__pict {
   max-width: 100%;
-  border-radius: 10px 10px 0 0;
+  @include border-radius(10px 10px 0 0);
   opacity: 0.8;
 }
 
 .portfolio__desc {
-  padding: 20px;
+  padding: rem(20px);
 }
 
 .portfolio__title {
   @include fira(regular);
-  font-size: 21px;
+  font-size: rem(21px);
   color: $blue;
 }
 
 .portfolio__about {
-  margin: 0 0 5px;
+  margin: 0 0 rem(5px);
   @include fira(light);
-  font-size: 14px;
+  font-size: rem(14px);
   color: $dark-gray;
 }
 
@@ -63,6 +62,6 @@
   color: #aeaeae;
 
   .fa {
-    font-size: 18px;
+    font-size: rem(18px);
   }
 }

@@ -3,25 +3,25 @@
   @extend %clearfix;
 }
 .page-content {
-  width: 700px;
+  width: rem(700px);
   float: right;
 }
 
 .about {
-  margin-left: 30px;
+  margin-left: rem(30px);
 }
 
 .about__left {
   float: left;
-  width: 280px;
+  width: rem(280px);
 }
 
 .about__pict {
   overflow: hidden;
   border: 5px solid #fff;
   @include border-radius(50%);
-  width: 220px;
-  height: 220px;
+  width: rem(220px);
+  height: rem(220px);
   background: url("../../img/avatar.png") center center no-repeat;
   background-size: 100%;
   transition: 0.3s;
@@ -39,20 +39,20 @@
 
 .about__right {
   float: right;
-  width: 390px;
+  width: rem(390px);
 }
 
 .title {
-  font-size: 35px;
+  font-size: rem(35px);
   line-height: 40px;
   color: $dark-gray;
   @include fira(medium);
-  margin: 0 0 18px 0;
+  margin: 0 0 rem(18px) 0;
 }
 
 .about__desc {
   p {
-    font-size: 18px;
+    font-size: rem(18px);
     @include fira(light);
     color: #646464;
   }
@@ -63,7 +63,7 @@
 }
 
 .btn {
-  padding: 10px;
+  padding: rem(10px);
   @include border-radius(20px);
   border: 2px solid $light-red;
   color: $light-red;

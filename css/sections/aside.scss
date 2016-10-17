@@ -1,5 +1,5 @@
 .sidebar {
-  width: 220px;
+  width: rem(220px);
   float: left;
 }
 
@@ -9,10 +9,10 @@
 
 .nav__link {
   display: block;
-  padding: 10px 20px 10px 0;
+  padding: rem(10px) rem(20px) rem(10px) 0;
   text-align: right;
   @include fira(regular);
-  font-size: 18px;
+  font-size: rem(18px);
   border-right: 6px solid transparent;
   color: $dark-gray;
   transition: 0.2s;

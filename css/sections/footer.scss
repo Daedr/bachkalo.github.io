@@ -17,7 +17,7 @@ $socials: (fb,vk,tw);
   height: $footer-height;
   line-height: $footer-height;
   @include fira(light);
-  font-size: 14px;
+  font-size: rem(14px);
   color: #9c9c9c;
 }
 
@@ -27,7 +27,7 @@ $socials: (fb,vk,tw);
 
 .socials {
   display: block;
-  margin: 10px 0 0 0;
+  margin: rem(10px) 0 0 0;
 }
 
 .socials__item {
@@ -36,10 +36,10 @@ $socials: (fb,vk,tw);
 
 .socials__link {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: rem(32px);
+  height: rem(32px);
   color: $white;
-  text-indent: -9999px;
+  text-indent: rem(-9999px);
 }
 
 @each $social in $socials {
