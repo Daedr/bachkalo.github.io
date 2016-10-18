@@ -1,16 +1,37 @@
 .sidebar {
-  width: rem(220px);
+  width: 25%;
   float: left;
+
+  @include tablets {
+    width: 100%;
+    float: none;
+    margin-bottom: rem(15px);
+  };
+
 }
 
 .nav {
+  padding-right: 20px;
+}
+
+.nav__list {
   text-align: right;
+
+  @include tablets {
+    text-align: left;
+  };
+}
+
+.nav__item {
+  @include tablets {
+    display: inline-block;
+    padding-right: 10px;
+  };
 }
 
 .nav__link {
   display: block;
   padding: rem(10px) rem(20px) rem(10px) 0;
-  text-align: right;
   @include fira(regular);
   font-size: rem(18px);
   border-right: 6px solid transparent;
@@ -21,6 +42,10 @@
     color: $blue;
     border-right-color: lighten($blue, 25%);
   }
+
+  @include tablets {
+    border: 0;
+  };
 }
 
 .nav__item_active {

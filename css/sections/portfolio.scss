@@ -1,6 +1,5 @@
 .portfolio {
-  width: rem(700px);
-  float: right;
+
 }
 
 .portfolio__list {
@@ -8,9 +7,22 @@
   font-size: 0;
 }
 
+// .Rounded_Rectangle_6 {
+//   border-radius: 10px;
+//   background-color: rgb(255, 255, 255);
+//   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+//   position: absolute;
+//   left: 267px;
+//   top: 210px;
+//   width: 229px;
+//   height: 292px;
+//   z-index: 32;
+// }
+
+
 .portfolio___item {
   @include valign();
-  width: rem(220px);
+  width: 33.3%;
   padding: 0 0 rem(20px) rem(20px);
 
   * {
@@ -21,9 +33,11 @@
 .portfolio__link {
   display: block;
   @include border-radius(10px);
+  @include box-shadow(0px 1px 3px 0px rgba(#000, 0.2));
   background-color: #fff;
 
   &:hover {
+    @include box-shadow(0px 4px 8px 0px rgba(#000, 0.2));
     .portfolio__title {
       color: $light-red;
     }

@@ -1,10 +1,15 @@
 .about {
-
   @extend %clearfix;
 }
-.page-content {
-  width: rem(700px);
+
+.description {
+  width: 75%;
   float: right;
+
+  @include tablets {
+    width: 100%;
+    margin-left: 0;
+  };
 }
 
 .about {
@@ -13,7 +18,10 @@
 
 .about__left {
   float: left;
-  width: rem(280px);
+  width: 40%;
+  @include tablets {
+    width: 25%;
+  };
 }
 
 .about__pict {
@@ -29,6 +37,11 @@
   &:hover {
     background-size: 110%;
   }
+
+  @include tablets {
+    width: rem(170px);
+    height: rem(170px);
+  };
 }
 
 .about__pict-img {
@@ -39,7 +52,11 @@
 
 .about__right {
   float: right;
-  width: rem(390px);
+  width: 60%;
+
+  @include tablets {
+    width: 70%;
+  };
 }
 
 .title {
@@ -51,6 +68,8 @@
 }
 
 .about__desc {
+  margin-bottom: 50px;
+
   p {
     font-size: rem(18px);
     @include fira(light);

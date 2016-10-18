@@ -1,23 +1,39 @@
-.career {
-  @extend %clearfix;
+.page-content {
+  width: 75%;
+  float: right;
+
+  @include tablets {
+    width: 100%;
+  };
 }
 
-.page-content {
-  width: rem(700px);
-  float: right;
+.career {
+  padding-left: rem(5px);
+  @extend %clearfix;
 }
 
 .career__left {
   float: left;
-  width: rem(280px);
+  width: 30%;
 }
 
 .career__right {
   float: right;
-  width: rem(390px);
+  width: 60%;
+  text-align: right;
+}
+
+.career__pict {
+  max-width: rem(220px);
+}
+
+.career__pict-img {
+  width: 100%;
 }
 
 .career__item {
+  width: 90%;
+  display: inline-block;
   text-align: right;
   margin-bottom: rem(20px);
 
@@ -39,8 +55,6 @@
 }
 
 .career__block {
-  width: rem(320px);
-  display: inline-block;
   padding: rem(20px);
   position: relative;
   text-align: left;
@@ -110,6 +124,7 @@
   transition: 0.2s;
   @include fira(light);
   font-size: rem(14px);
+  color: $light-gray;
 
   &:after {
     content: "";

@@ -9,6 +9,7 @@ $socials: (fb,vk,tw);
   position: relative;
 }
 
+
 .footer__left {
   float: left;
 }
@@ -18,7 +19,7 @@ $socials: (fb,vk,tw);
   line-height: $footer-height;
   @include fira(light);
   font-size: rem(14px);
-  color: #9c9c9c;
+  color: $light-gray;
 }
 
 .footer__right {
@@ -44,10 +45,12 @@ $socials: (fb,vk,tw);
 
 @each $social in $socials {
    .socials__link_#{$social} {
-     background: url('/img/social/#{$social}.png') 0 0 no-repeat;
+     background: url('/img/social/#{$social}.png') center no-repeat;
+     background-size: 100%;
 
      &:hover {
-       background: url('/img/social_hover/#{$social}.png') 0 0 no-repeat;
+       background: url('/img/social_hover/#{$social}.png') center no-repeat;
+       background-size: 100%;
      }
    }
 }

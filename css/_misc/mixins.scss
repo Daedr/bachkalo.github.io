@@ -46,12 +46,9 @@
 
 //float-clean
 %clearfix {
-  &:after, &:before {
-    content: "";
-    display: table;
-  }
-
   &:after {
+    content: "";
+    display: block;
     clear: both;
   }
 }
