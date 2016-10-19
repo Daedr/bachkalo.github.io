@@ -3530,19 +3530,25 @@ header {
 }
 
 .contacts {
-  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  float: right;
+}
+
+.contacts:hover .contacts__dropdown {
+  display: block;
 }
 
 @media screen and (max-width: 480px) {
   .contacts {
-    padding-top: 0.88889rem;
+    margin-top: 0.88889rem;
     text-align: right;
+  }
+  .contacts:hover .contacts__link {
+    color: #e85f61;
   }
 }
 
 .contacts__link {
-  float: right;
-  display: block;
   background: url("../../img/decor/dot.png") 0.61111rem 1.16667rem repeat-x;
   color: #33c1e3;
   font-family: 'fira_sansbold';
@@ -3552,10 +3558,6 @@ header {
 .contacts__link:hover {
   color: #e85f61;
   background: url("../../img/decor/dot_hover.png") 0.61111rem 1.16667rem repeat-x;
-}
-
-.contacts__link:hover + .contacts__dropdown {
-  display: block;
 }
 
 @media screen and (max-width: 480px) {
@@ -3576,6 +3578,7 @@ header {
 }
 
 .contacts__dropdown {
+  line-height: 1.42;
   display: none;
   position: absolute;
   top: 70px;
@@ -3588,10 +3591,6 @@ header {
   border-radius: 10px;
   background-color: #fff;
   z-index: 10;
-}
-
-.contacts__dropdown:hover {
-  display: block;
 }
 
 .contacts__dropdown:before {
@@ -3632,8 +3631,8 @@ header {
 
 @media screen and (max-width: 480px) {
   .contacts__dropdown:after {
-    height: 35px;
-    top: -34px;
+    height: 55px;
+    top: -54px;
   }
 }
 

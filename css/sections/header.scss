@@ -60,16 +60,27 @@ header {
 }
 
 .contacts {
-  padding-top: rem(27px);
+  margin-top: rem(27px);
+  float: right; //new
+
+  &:hover {
+     .contacts__dropdown {
+        display: block;
+    }
+  }
   @include phones {
-    padding-top: rem(16px);
+    margin-top: rem(16px);
     text-align: right;
+
+    &:hover {
+      .contacts__link {
+        color: $light-red;
+      }
+    }
   };
 }
 
 .contacts__link {
-  float: right;
-  display: block;
   background: url("../../img/decor/dot.png") rem(11px) rem(21px) repeat-x;
   color: $blue;
   @include fira(bold);
@@ -78,11 +89,8 @@ header {
   &:hover {
     color: $light-red;
     background: url("../../img/decor/dot_hover.png") rem(11px) rem(21px) repeat-x;
-
-    & + .contacts__dropdown {
-      display: block;
-    }
   }
+
   @include phones {
     background: none;
 
@@ -103,6 +111,7 @@ header {
 }
 
 .contacts__dropdown {
+  line-height: 1.42;//new
   display: none;
   position: absolute;
   top: 70px;
@@ -112,10 +121,6 @@ header {
   @include border-radius(10px);
   background-color: #fff;
   z-index: 10;
-
-  &:hover {
-    display: block;
-  }
 
   &:before {
     position: absolute;
@@ -149,8 +154,8 @@ header {
     };
 
     @include phones {
-      height: 35px;
-      top: -34px;
+      height: 55px;
+      top: -54px;
     };
   }
 
