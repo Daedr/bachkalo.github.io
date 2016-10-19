@@ -25,7 +25,6 @@
 .nav__item {
   @include tablets {
     display: inline-block;
-    padding-right: 10px;
   };
 }
 
@@ -45,6 +44,13 @@
 
   @include tablets {
     border: 0;
+  };
+
+  @include phones {
+    padding-right: rem(14px);
+    .fa {
+      display: none;
+    }
   };
 }
 

@@ -3,12 +3,27 @@ header {
   background-color: rgb(255, 255, 255);
   @include box-shadow(0px 1px 3px 0px rgba(#000, 0.2));
   @extend %clearfix;
+  @include phones {
+    margin-bottom: rem(15px);
+  };
 }
 
 .header__left,
 .header__right {
   float: left;
   width: 50%;
+}
+
+.header__left {
+  @include phones {
+    width: 65%;
+  };
+}
+
+.header__right {
+  @include phones {
+    width: 35%;
+  };
 }
 
 .container {
@@ -29,35 +44,62 @@ header {
   @include border-radius (50%);
   background: url("../../img/avatar.png") 0 0 no-repeat;
   background-size: 100%;
+  @include phones {
+    width: 60px;
+    height: 60px;
+  };
 }
 
 .user__name {
   color: $dark-gray;
   @include fira(medium);
   @include valign(middle);
+  @include phones {
+    width: 100px;
+  };
 }
 
 .contacts {
   padding-top: rem(27px);
+  @include phones {
+    padding-top: rem(16px);
+    text-align: right;
+  };
 }
 
 .contacts__link {
   float: right;
   display: block;
-  background: url(../../img/decor/dot.png) rem(11px) rem(21px) repeat-x;
+  background: url("../../img/decor/dot.png") rem(11px) rem(21px) repeat-x;
   color: $blue;
   @include fira(bold);
   transition: 0.3s;
 
   &:hover {
     color: $light-red;
-    background: url(../../img/decor/dot_hover.png) rem(11px) rem(21px) repeat-x;
+    background: url("../../img/decor/dot_hover.png") rem(11px) rem(21px) repeat-x;
 
     & + .contacts__dropdown {
       display: block;
     }
   }
+  @include phones {
+    background: none;
 
+    span {
+      display: none;
+    }
+
+    &:hover {
+      background: none;
+    }
+
+    &:before {
+      content: "\f095";
+      font-family: FontAwesome;
+      font-size: 40px;
+    }
+  };
 }
 
 .contacts__dropdown {
@@ -105,11 +147,20 @@ header {
     @include laptop {
       top: rem(-24px);
     };
+
+    @include phones {
+      height: 35px;
+      top: -34px;
+    };
   }
 
   @include laptop {
     right: 3%;
     top: rem(73px);
+  };
+
+  @include phones {
+    top: 85px;
   };
 }
 

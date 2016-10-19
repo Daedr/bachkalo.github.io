@@ -12,6 +12,11 @@ $socials: (fb,vk,tw);
 
 .footer__left {
   float: left;
+
+  @include phones {
+    float: none;
+    text-align: center;
+  };
 }
 
 .copyright {
@@ -20,10 +25,18 @@ $socials: (fb,vk,tw);
   @include fira(light);
   font-size: rem(14px);
   color: $light-gray;
+  @include phones {
+    font-size: 14px;
+  };
 }
 
 .footer__right {
   float: right;
+
+  @include phones {
+    float: none;
+    text-align: center;
+  };
 }
 
 .socials {
@@ -33,6 +46,9 @@ $socials: (fb,vk,tw);
 
 .socials__item {
   display: inline-block;
+  @include phones {
+    font-size: 14px;
+  };
 }
 
 .socials__link {

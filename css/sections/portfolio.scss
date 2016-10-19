@@ -1,24 +1,7 @@
-.portfolio {
-
-}
-
 .portfolio__list {
   margin: 0 0 0 rem(-20px);
   font-size: 0;
 }
-
-// .Rounded_Rectangle_6 {
-//   border-radius: 10px;
-//   background-color: rgb(255, 255, 255);
-//   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-//   position: absolute;
-//   left: 267px;
-//   top: 210px;
-//   width: 229px;
-//   height: 292px;
-//   z-index: 32;
-// }
-
 
 .portfolio___item {
   @include valign();
@@ -28,6 +11,10 @@
   * {
     font-size: rem(14px);
   }
+
+  @include phones {
+    width: 100%;
+  };
 }
 
 .portfolio__link {
@@ -52,6 +39,10 @@
   max-width: 100%;
   @include border-radius(10px 10px 0 0);
   opacity: 0.8;
+
+  @include phones {
+    width: 100%;
+  };
 }
 
 .portfolio__desc {
@@ -62,6 +53,10 @@
   @include fira(regular);
   font-size: rem(21px);
   color: $blue;
+
+  @include phones {
+    font-size: 24px;
+  };
 }
 
 .portfolio__about {

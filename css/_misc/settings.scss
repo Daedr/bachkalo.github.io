@@ -9,10 +9,6 @@ html {
 		font-size: $font-size - 2;
 	}
 
-	@include tablets {
-		font-size: $font-size - 3;
-	}
-
 	@include phones {
 		font-size: $font-size - 4;
 	}
@@ -44,6 +40,10 @@ body {
 
 .main-content {
 	padding-bottom: $footer-height;
+
+	@include phones {
+		padding-bottom: 30px;
+	};
 }
 
 .container {
@@ -83,5 +83,9 @@ footer {
 
 	@include tablets {
 		width: 100%;
+	};
+
+	@include phones {
+		height: 115px;
 	};
 }
