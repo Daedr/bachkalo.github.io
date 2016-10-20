@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Карьера</title>
+  <title>Обо мне</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
@@ -34,7 +34,7 @@
             <!--================== contacts ==================-->
             <div class="contacts">
               <a href="#" class="contacts__link">
-                <span>Мои контакты</span>
+                <span class="contacts__link-text">Мои контакты</span>
               </a>
               <ul class="contacts__dropdown">
                 <li class="contacts__dropdown-item">
@@ -67,13 +67,13 @@
           <aside class="sidebar">
             <div class="nav">
               <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="./about.html" class="nav__link">
+                <li class="nav__item nav__item_active">
+                  <a href="./index.html" class="nav__link">
                     <i class="fa fa-user-secret" aria-hidden="true"></i>
                     <span class="nav__link-text">Обо мне</span>
                   </a>
                 </li>
-                <li class="nav__item nav__item_active">
+                <li class="nav__item">
                   <a href="./career.html" class="nav__link">
                     <i class="fa fa-rocket" aria-hidden="true"></i>
                     <span class="nav__link-text">Карьерный путь</span>
@@ -88,47 +88,35 @@
               </ul>
             </div>
           </aside>
-          <!--================== career ==================-->
-          <div class="page-content">
-            <div class="career">
-              <h1 class="title">
-                Карьерный путь
-              </h1>
-              <div class="career__left">
-                <div class="career__pict">
-                  <img src="./img/career.jpg" alt="Career" class="career__pict-img">
+          <!--================== about ==================-->
+          <main class="description">
+            <div class="about">
+              <div class="about__left">
+                <div class="about__pict">
+                  <img src="./img/avatar.png" alt="avatar" class="about__pict-img">
                 </div>
               </div>
-              <div class="career__right">
-                <ul class="career__list">
-                  <li class="career__item">
-                    <div class="career__block">
-                      <div class="career__title">ООО "Металл Холдинг Трейд"</div>
-                      <div class="career__occupation">Системный администратор</div>
-                      <div class="career__date">2012-2015</div>
-                      <div class="career__year">2015</div>
-                    </div>
-                  </li>
-                  <li class="career__item">
-                    <div class="career__block">
-                      <div class="career__title">ООО "Альянс"</div>
-                      <div class="career__occupation">Системный администратор</div>
-                      <div class="career__date">2008-2012</div>
-                      <div class="career__year">2012</div>
-                    </div>
-                  </li>
-                  <li class="career__item">
-                    <div class="career__block">
-                      <div class="career__title">ЦСО "КРЦ"</div>
-                      <div class="career__occupation">Инженер</div>
-                      <div class="career__date">2008</div>
-                      <div class="career__year">2008</div>
-                    </div>
-                  </li>
-                </ul>
+              <div class="about__right">
+                <h1 class="title">About me</h1>
+                <div class="about__desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur molestias repudiandae recusandae, natus necessitatibus, adipisci similique perferendis, quasi expedita porro esse blanditiis eveniet eaque dignissimos, veritatis
+                    rem veniam. Consequuntur ex voluptas, magni minima quae.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur molestias repudiandae recusandae, natus necessitatibus, adipisci similique perferendis, quasi expedita porro esse blanditiis eveniet eaque dignissimos, veritatis
+                    rem veniam. Consequuntur ex voluptas, magni minima quae.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur molestias repudiandae recusandae, natus necessitatibus, adipisci similique perferendis, quasi expedita porro esse blanditiis eveniet eaque dignissimos, veritatis
+                    rem veniam. Consequuntur ex voluptas, magni minima quae.</p>
+                </div>
+                <div class="about__btns">
+                  <a href="./test.txt" class="btn btn-red" download>
+                    <span class="btn__icon">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </span>
+                    <span class="btn__text">Download resume</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </main>
         </div>
       </div>
     </div>
@@ -142,13 +130,13 @@
       <div class="footer__right">
         <ul class="socials">
           <li class="socials__item">
-            <a href="#" class="socials__link socials__link_fb">FB</a>
+            <a href="#" class="socials__link socials__link_fb"></a>
           </li>
           <li class="socials__item">
-            <a href="#" class="socials__link socials__link_vk">VK</a>
+            <a href="#" class="socials__link socials__link_vk"></a>
           </li>
           <li class="socials__item">
-            <a href="#" class="socials__link socials__link_tw">TW</a>
+            <a href="#" class="socials__link socials__link_tw"></a>
           </li>
         </ul>
       </div>

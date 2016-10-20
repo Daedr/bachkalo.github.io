@@ -44,6 +44,7 @@ header {
   @include border-radius (50%);
   background: url("../../img/avatar.png") 0 0 no-repeat;
   background-size: 100%;
+
   @include phones {
     width: 60px;
     height: 60px;
@@ -52,7 +53,8 @@ header {
 
 .user__name {
   color: $dark-gray;
-  @include fira(medium);
+  @include fira(regular);
+  font-size: rem(18px);
   @include valign(middle);
   @include phones {
     width: 100px;
