@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Бачкало Алексей</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+
+  <!-- build:css ../css/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="wrapper">
+    <div class="main-content">
+      <!--================== header ==================-->
+      //= ../include/header.html
+      <!--================== content ==================-->
+      <div class="content">
+        <div class="container">
+          <!--================== sidebar ==================-->
+          <aside class="sidebar">
+            <div class="nav">
+              <ul class="nav__list">
+                <li class="nav__item nav__item_active">
+                  <a href="./index.html" class="nav__link">
+                    <i class="fa fa-user-secret" aria-hidden="true"></i>
+                    <span class="nav__link-text">Обо мне</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="./career.html" class="nav__link">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    <span class="nav__link-text">Карьерный путь</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="./portfolio.html" class="nav__link">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <span class="nav__link-text">Портфолио</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <!--================== about ==================-->
+          <main class="description">
+            <div class="about">
+              <div class="about__left">
+                <div class="about__pict">
+                  <img src="../img/personal/avatar.png" alt="avatar" class="about__pict-img">
+                </div>
+              </div>
+              <div class="about__right">
+                <h1 class="title">Обо мне</h1>
+                <div class="about__desc">
+                  <p>Привет всем! Меня зовут <strong>Бачкало Алексей</strong>, живу недалеко от г. Киев.</p>
+                  <p>В IT сфере не первый год - с 2008г. работал <i>системным администратором</i>. С 2015 года начал более детально интересоваться Web-разработкой</p>
+                  <p>Закончил курсы при <strong>Infopulse</strong> и на данный момент уже самостоятельно отшлифовываю front-end скилы. А именно:</p>
+                  <ul>
+                    <li>Знание HTML/CSS (HTML5/CSS3)</li>
+                    <li>Семантическая верстка</li>
+                    <li>Начальные знания Javascript (es5/es6)</li>
+                    <li>Адаптивная верстка (media query)</li>
+                    <li>Понимание и применение модульной верстки</li>
+                    <li>Использование БЭМ-нэйминга</li>
+                    <li>Использование препроцессора SASS</li>
+                    <li>Знание Photoshop на уровне нарезки макета</li>
+                    <li>Использование сборщика проэктов Gulp</li>
+                  </ul>
+                </div>
+                <div class="about__btns">
+                  <a href="../personal/resume.pdf" class="btn btn-red" target="_blank">
+                    <span class="btn__icon">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </span>
+                    <span class="btn__text">Скачать резюме</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================== footer ==================-->
+  //= ../include/footer.html
+</body>
+
+</html>
